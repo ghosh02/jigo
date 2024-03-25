@@ -1,13 +1,17 @@
 import Carousel from "react-bootstrap/Carousel";
-import banner1 from '../assets/sliders/Banner002.jpg';
-import banner2 from '../assets/sliders/Banner003.jpg';
-import banner3 from '../assets/sliders/Banner004.jpg';
+import banner1 from '../assets/sliders/ban1.jpg';
+import banner2 from '../assets/sliders/ban2.jpg';
+import banner3 from '../assets/sliders/ban3.jpg';
+import banner4 from '../assets/sliders/ban4.jpg';
+import banner5 from '../assets/sliders/ban5.jpg';
+import banner6 from '../assets/sliders/ban6.jpg';
 
 const Banner = () => {
   return (
     <Carousel
       data-bs-theme="light"
       fade
+      interval={2000}
       prevIcon={
         <div className="rounded-circle bg-white p-3">
           <svg
@@ -63,6 +67,27 @@ const Banner = () => {
           className="d-block  h-[50%]"
           src={banner3}
           alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block  h-[50%]"
+          src={banner4}
+          alt="Fourth slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block  h-[50%]"
+          src={banner5}
+          alt="Fourth slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block  h-[50%]"
+          src={banner6}
+          alt="Fourth slide"
         />
       </Carousel.Item>
     </Carousel>

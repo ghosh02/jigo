@@ -52,7 +52,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="text-white hover:text-xl cursor-pointer">
+                <a href="https://www.linkedin.com/in/jigo-india-4719292b5/" target="_blank"  className="text-white hover:text-xl cursor-pointer">
                   Linkedin
                 </a>
               </li>
@@ -77,16 +77,6 @@ const Footer = () => {
               <li>
                 <a className="text-white hover:text-gray-800">
                   32, Ezra Street Room No-518 Calcutta, W.B 700001
-                </a>
-              </li>
-              <li>
-                <a className="text-white hover:text-gray-800">
-                Express Industrial Complex New korola, Howrah -711302 W.B.
-                </a>
-              </li>
-              <li>
-                <a className="text-white hover:text-gray-800">
-                Jigo Industrial Complex Bagnan - Khalna Road, Howrah -711303 W.B.
                 </a>
               </li>
               <li>

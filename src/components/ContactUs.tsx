@@ -6,6 +6,8 @@ import HeaderText from "./HeaderText";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsBrowserEdge } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const menuItems = [
   {
     name: "Home",
@@ -21,20 +23,20 @@ const menuItems = [
   },
 ];
 
-const locations = [
-  {
-    title: "Kolkata Office",
-    timings: "www.jigoindia.com",
-    call: "+91 83360 22220",
-    address: "32, Ezra Street Room No-518 Calcutta, W.B 700001",
-  },
+// const locations = [
+//   {
+//     title: "Kolkata Office",
+//     timings: "www.jigoindia.com",
+//     call: "+91 83360 22220",
+//     address: "32, Ezra Street Room No-518 Calcutta, W.B 700001",
+//   },
 
-  {
-    title: "Email & Phone",
-    timings: "1800-120-3456",
-    address: "hirawat@jigoindia.com",
-  },
-];
+//   {
+//     title: "Email & Phone",
+//     timings: "1800-120-3456",
+//     address: "hirawat@jigoindia.com",
+//   },
+// ];
 
 const ContactUs = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -173,46 +175,87 @@ const ContactUs = () => {
                   height: 340,
                   marginTop: 25,
                   borderRadius: 15,
-              }}
-              aria-hidden="false"
+                }}
+                aria-hidden="false"
               ></iframe>
+
               <div className="my-4 flex flex-col gap-y-8 md:flex-row lg:justify-around">
-                {locations.map((location) => (
+                
                   <div
-                    key={location.title}
                     className="flex flex-col space-y-2 md:w-2/4 lg:w-1/8 "
                   >
                     <Infinity className="h-5 w-5" />
                     <p className="w-full text-xl font-semibold  text-gray-900 pt-2">
-                      {location.title}
+                    Kolkata Office
                     </p>
-                    {location.call && (
-                      <div className="flex-row flex ">
-                        <FaPhoneAlt style={{ marginRight: 5 }} />
-                        <p className="text-sm font-medium flex-row">
-                          {location.call}
-                        </p>
-                      </div>
-                    )}
+                    
+                      
+                  
                     <div className="flex-row flex items-center ">
-                      {location.timings == "1800-120-3456" ? (
+                      {/* {location.timings == "1800-120-3456" ? (
                         <FaPhoneAlt style={{ marginRight: 5 }} />
                       ) : (
                         <BsBrowserEdge style={{ marginRight: 5 }} />
-                      )}
+                      )} */}
+                      <BsBrowserEdge style={{ marginRight: 5 }} />
 
                       <p className="w-full text-base text-gray-700">
-                        {location.timings}
+                        www.jigoindia.com
                       </p>
                     </div>
                     <div className="flex-row flex ">
                       <FaLocationDot style={{ marginRight: 5 }} />
                       <p className="text-sm font-medium flex-row">
-                        {location.address}
+                        32, Ezra Street Room No-518 Calcutta, W.B 700001
                       </p>
                     </div>
+                    <div className="flex-row flex ">
+                      <FaLocationDot style={{ marginRight: 5 }} />
+                      <p className="text-sm font-medium flex-row">
+                      Express Industrial Complex New korola, Howrah -711302 W.B.
+                      </p>
+                    </div>
+                    <div className="flex-row flex ">
+                      <FaLocationDot style={{ marginRight: 5 }} />
+                      <p className="text-sm font-medium flex-row">
+                      Jigo Industrial Complex Bagnan - Khalna Road, Howrah -711303 W.B.
+                      </p>
+                    </div>
+
                   </div>
-                ))}
+
+                  <div
+                    className="flex flex-col space-y-2 md:w-2/4 lg:w-1/8 "
+                  >
+                    <Infinity className="h-5 w-5" />
+                    <p className="w-full text-xl font-semibold  text-gray-900 pt-2">
+                    Email & Phone
+                    </p>
+                    
+                      <div className="flex-row flex ">
+                        <FaPhoneAlt style={{ marginRight: 5 }} />
+                        <p className="text-sm font-medium flex-row">
+                          +91 83360 22220
+                        </p>
+                      </div>
+                  
+                    <div className="flex-row flex items-center ">
+           
+                      <MdEmail style={{ marginRight: 5 }} />
+                      <p className="w-full text-base text-gray-700">
+                       hirawat@jigoindia.com
+                      </p>
+                    </div>
+                    <div className="flex-row flex items-center ">
+           
+                      <MdEmail style={{ marginRight: 5 }} />
+                      <p className="w-full text-base text-gray-700">
+                      psent2005@gmail.com
+                      </p>
+                    </div>
+
+                  </div>
+                
               </div>
             </div>
           </div>

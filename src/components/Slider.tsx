@@ -43,7 +43,7 @@ const Slider = ({ images }: { images: string[] }) => {
   };
 
   return (
-    <div className="w-[100%] md:w-[30%]  flex flex-col overflow-x-auto py-10">
+    <div className="w-[100%] md:w-[30%]  flex flex-col  py-10">
       <div className="relative w-[80%] mx-auto  md:w-[80%]">
         <div className="overflow-hidden">
           <img
@@ -79,7 +79,7 @@ const Slider = ({ images }: { images: string[] }) => {
           <BsFullscreen className="text-2xl" />
         </button>
       </div>
-      <div className="flex flex-row ml-0 md:-ml-10 mx-auto">
+      <div className="flex flex-row ml-0 md:-ml-10 mx-auto overflow-x-auto">
             {images.map((image) => (
                 <img
                     src={IMAGE_URL + image}
